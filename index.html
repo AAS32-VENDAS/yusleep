@@ -7,7 +7,6 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'AW-18483690321');
   </script>
   <meta charset="UTF-8">
@@ -27,12 +26,34 @@
     .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{border:1px solid #e9e9f0;border-radius:12px;padding:22px;background:#fff}.feature .symbol{font-size:25px}.feature h3{color:var(--navy);margin:8px 0}
     .shade{background:var(--paper)}.ingredients{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ingredient{background:#fff;border:1px solid #ececf2;border-radius:10px;padding:18px}.ingredient b{color:var(--navy);display:block;margin-bottom:5px}
     .steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border-radius:12px;padding:22px;border:1px solid #e9e9f0}.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green);font-weight:900;margin-bottom:12px}
-    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.price-card{border:1px solid #e4e4ed;border-radius:14px;padding:24px;text-align:center;position:relative;background:#fff;display:flex;flex-direction:column}.price-card.best{border:2px solid var(--green);box-shadow:0 10px 30px #18203a14}.ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--green);padding:4px 14px;border-radius:20px;font-size:11px;font-weight:900;white-space:nowrap}.price-card img{height:175px;max-width:100%;object-fit:contain;margin:8px auto 12px}.price-card h3{color:var(--navy);margin:8px 0}.old{color:#9292a0;text-decoration:line-through;font-size:14px}.price{font-size:38px;font-weight:900;color:var(--navy);line-height:1.2}.per{font-size:13px;color:var(--muted)}.price-card ul{padding-left:18px;text-align:left;color:#555;font-size:14px;flex:1}.price-card .btn{margin-top:12px}.disclaimer{font-size:12px;color:#747486;margin-top:20px;text-align:center}
+    /* Package cards styled to echo the seller's offer layout */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .price-card{border:1px solid #e4e4ed;border-radius:12px;padding:20px 18px;text-align:center;position:relative;background:#fff;display:flex;flex-direction:column;overflow:hidden}
+    .price-card.best{border:2px solid #a7c9e9;box-shadow:0 10px 30px #18203a14;background:#f2f8ff}
+    .offer-kicker{font-size:15px;font-weight:900;letter-spacing:.3px;text-transform:uppercase;color:#555;margin:0 0 8px}
+    .price-card.best .offer-kicker{color:#344e9b}
+    .saving{font-size:13px;font-weight:900;color:#6f9142;text-transform:uppercase;margin-bottom:5px}
+    .price-card img{height:175px;width:100%;max-width:100%;object-fit:contain;margin:6px auto 8px}
+    .price-card h3{color:var(--navy);margin:7px 0 0;font-size:20px}
+    .price-line{display:flex;align-items:baseline;justify-content:center;gap:8px;margin:8px 0 0;white-space:nowrap}
+    .old{color:#777;text-decoration:line-through;font-size:25px;font-weight:800}.price{font-size:37px;font-weight:900;color:#4c3298;line-height:1.1}.each{font-size:13px;color:#555;font-weight:700}
+    .per{font-size:13px;color:var(--muted);margin:0 0 10px}
+    .offer-perks{display:grid;gap:8px;margin:8px 0 12px;min-height:66px}
+    .perk{background:#85b84b;color:#fff;font-size:13px;font-weight:900;letter-spacing:.5px;padding:5px 8px;text-align:left}
+    .perk:before{content:'✓';font-size:19px;font-weight:900;margin-right:8px;color:#d9edff}
+    .perk.empty{visibility:hidden}
+    .price-card .btn{margin-top:auto;background:#f7d84d;color:#18234a;border:1px solid #e5bd26;border-radius:8px;font-size:17px;padding:12px 14px;text-transform:uppercase}
+    .cart-icon{display:inline-grid;place-items:center;background:#263d78;color:white;border-radius:50%;width:30px;height:30px;margin-left:8px;font-size:17px;vertical-align:middle}
+    .payments{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap;margin:12px 0 8px}
+    .pay{font-size:10px;font-weight:900;letter-spacing:-.3px;padding:5px 6px;border:1px solid #d8d8df;border-radius:4px;background:#fff;min-width:48px;color:#243d72;line-height:1.1}
+    .pay.mc{color:#b43c30}.pay.visa{color:#174b9b;font-size:12px}.pay.amex{color:#1672a8}.pay.discover{color:#333}
+    .package-total{font-size:13px;color:#666;margin-top:4px}.package-total s{color:#999}
+    .disclaimer{font-size:12px;color:#747486;margin-top:20px;text-align:center}
     .bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.bonus{background:#fff;border:1px solid #e8e8ef;padding:22px;border-radius:12px}.bonus h3{color:var(--navy);font-size:18px;margin:0 0 8px}.bonus-tag{color:#5b842a;font-size:12px;font-weight:900;text-transform:uppercase}
     .guarantee{display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:center;background:#f5f6fb;border-radius:16px;padding:30px}.guarantee img{width:100%;max-width:160px}.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid #e7e7ed;padding:17px 0}.faq summary{font-weight:800;color:var(--navy);cursor:pointer}.faq p{color:var(--muted);margin-bottom:0}
     .cta-band{background:var(--navy);color:#fff;text-align:center;padding:48px 20px}.cta-band h2{font-size:32px;margin:0 0 10px}.cta-band p{color:#dddced;margin:0 auto 22px;max-width:650px}
     footer{background:#100e29;color:#c8c7d7;padding:30px 0;font-size:12px}footer a{color:#fff}.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0}.legal{color:#aaa9bb;max-width:950px}
-    @media(max-width:800px){.hero-grid,.two{grid-template-columns:1fr}.hero{text-align:center}.hero-img{max-width:340px}.feature-grid,.ingredients,.steps,.pricing,.bonus-grid{grid-template-columns:1fr}.nav nav{display:none}.guarantee{grid-template-columns:1fr;text-align:center}.guarantee img{margin:auto;width:130px}section{padding:46px 0}.price-card img{height:155px}}
+    @media(max-width:800px){.hero-grid,.two{grid-template-columns:1fr}.hero{text-align:center}.hero-img{max-width:340px}.feature-grid,.ingredients,.steps,.pricing,.bonus-grid{grid-template-columns:1fr}.nav nav{display:none}.guarantee{grid-template-columns:1fr;text-align:center}.guarantee img{margin:auto;width:130px}section{padding:46px 0}.price-card img{height:165px}.price-card{max-width:520px;width:100%;margin:auto}}
   </style>
 </head>
 <body>
@@ -104,29 +125,48 @@
 
     <section id="packages"><div class="wrap">
       <h2 class="section-title">Compare Yu Sleep Packages</h2>
-      <p class="lead">The following prices are displayed on the seller's website at the time this page was prepared. Confirm the live price, shipping and taxes on the checkout page.</p>
+      <p class="lead">Compare the package options shown in the seller's offer. Prices, shipping and bonus availability may change; confirm the final total on the seller's checkout page.</p>
       <div class="pricing">
+        <!-- 2-bottle package: 30% off, $69 each, $138 total -->
         <article class="price-card">
-          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828b96f6e48ec3d3c31143e.webp" alt="One bottle of Yu Sleep">
-          <h3>1 Bottle</h3><div class="old">$99</div><div class="price">$69</div><div class="per">one-time package price</div>
-          <ul><li>1 bottle</li><li>60-day guarantee advertised</li><li>Shipping may be added at checkout</li></ul>
-          <a class="btn" data-buy href="#">CHECK OFFER</a>
+          <div class="offer-kicker">30% OFF · SAVE $60</div>
+          <img src="yu-sleep-2-bottles.jpg" alt="Two original Yu Sleep amber dropper bottles with purple labels">
+          <h3>2 Month Supply</h3>
+          <div class="price-line"><span class="old">$99</span><span class="price">$69</span><span class="each">/each</span></div>
+          <div class="per">$138 total · 2 bottles</div>
+          <div class="offer-perks"><div class="perk empty">Free shipping</div><div class="perk empty">Free bonuses</div></div>
+          <a class="btn" data-buy href="#">ADD TO CART <span class="cart-icon">🛒</span></a>
+          <div class="payments"><span class="pay mc">Mastercard</span><span class="pay visa">VISA</span><span class="pay amex">AMERICAN<br>EXPRESS</span><span class="pay discover">DISCOVER</span></div>
+          <div class="package-total">Total: <s>$198</s> $138</div>
         </article>
+
+        <!-- 6-bottle package: 50% off, $49 each, $294 total -->
         <article class="price-card best">
-          <div class="ribbon">POPULAR PACKAGE</div>
-          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828ba756e48ec25bd311679.png" alt="Three bottles of Yu Sleep">
-          <h3>3 Bottles</h3><div class="old">$297</div><div class="price">$177</div><div class="per">$59 per bottle</div>
-          <ul><li>3 bottles</li><li>Seller advertises bonus gifts</li><li>60-day guarantee advertised</li><li>Confirm shipping terms at checkout</li></ul>
-          <a class="btn" data-buy href="#">CHECK OFFER</a>
+          <div class="offer-kicker">50% OFF · SAVE $300</div>
+          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6827b16680f93e05caaed4ae.png" alt="Six Yu Sleep amber dropper bottles with purple labels">
+          <h3>6 Month Supply</h3>
+          <div class="price-line"><span class="old">$99</span><span class="price">$49</span><span class="each">/each</span></div>
+          <div class="per">$294 total · 6 bottles</div>
+          <div class="offer-perks"><div class="perk">FREE SHIPPING</div><div class="perk">FREE BONUSES</div></div>
+          <a class="btn" data-buy href="#">ADD TO CART <span class="cart-icon">🛒</span></a>
+          <div class="payments"><span class="pay mc">Mastercard</span><span class="pay visa">VISA</span><span class="pay amex">AMERICAN<br>EXPRESS</span><span class="pay discover">DISCOVER</span></div>
+          <div class="package-total">Total: <s>$594</s> $294</div>
         </article>
+
+        <!-- 3-bottle package: 40% off, $59 each, $177 total -->
         <article class="price-card">
-          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6827b16680f93e05caaed4ae.png" alt="Six bottles of Yu Sleep">
-          <h3>6 Bottles</h3><div class="old">$594</div><div class="price">$234</div><div class="per">$39 per bottle</div>
-          <ul><li>6 bottles</li><li>Seller advertises bonus gifts</li><li>60-day guarantee advertised</li><li>Confirm shipping terms at checkout</li></ul>
-          <a class="btn" data-buy href="#">CHECK OFFER</a>
+          <div class="offer-kicker">40% OFF · SAVE $120</div>
+          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828ba756e48ec25bd311679.png" alt="Three Yu Sleep amber dropper bottles with purple labels">
+          <h3>3 Month Supply</h3>
+          <div class="price-line"><span class="old">$99</span><span class="price">$59</span><span class="each">/each</span></div>
+          <div class="per">$177 total · 3 bottles</div>
+          <div class="offer-perks"><div class="perk">FREE SHIPPING</div><div class="perk">FREE BONUSES</div></div>
+          <a class="btn" data-buy href="#">ADD TO CART <span class="cart-icon">🛒</span></a>
+          <div class="payments"><span class="pay mc">Mastercard</span><span class="pay visa">VISA</span><span class="pay amex">AMERICAN<br>EXPRESS</span><span class="pay discover">DISCOVER</span></div>
+          <div class="package-total">Total: <s>$297</s> $177</div>
         </article>
       </div>
-      <p class="disclaimer">Prices and package details can change without notice. The checkout page is the final source for current price, available packages, shipping, taxes and payment methods.</p>
+      <p class="disclaimer">Prices and package details can change without notice. The checkout page is the final source for current price, available packages, shipping, taxes and payment methods. Payment logos are shown as visual references; accepted methods are determined by the seller's checkout.</p>
     </div></section>
 
     <section class="shade"><div class="wrap">
@@ -153,7 +193,7 @@
       <h2 class="section-title">Frequently Asked Questions</h2>
       <details><summary>Where can I check the current price?</summary><p>Use one of the offer links on this page to visit the seller's website. The final amount, shipping and taxes are shown during checkout.</p></details>
       <details><summary>Which payment methods are accepted?</summary><p>Payment options can vary. Review the payment methods displayed on the secure checkout page before submitting an order.</p></details>
-      <details><summary>Is shipping included?</summary><p>The seller's published page indicates that shipping may be added to the single-bottle package. Check the checkout total for the exact shipping cost on any package.</p></details>
+      <details><summary>Is shipping included?</summary><p>The seller's published page indicates that shipping may be added to the two-bottle package. The 3-bottle and 6-bottle offers display free shipping. Confirm the checkout total for the exact shipping cost.</p></details>
       <details><summary>Are the bonus guides included with every package?</summary><p>The seller displays bonus gifts with the 3-bottle and 6-bottle offers. Confirm the current bonus terms on the seller's page before ordering.</p></details>
       <details><summary>Does Yu Sleep treat insomnia?</summary><p>This is a dietary supplement, not a substitute for medical care. The information on this page does not establish that Yu Sleep diagnoses, treats, cures or prevents any disease. Speak with a healthcare professional about persistent sleep problems.</p></details>
       <details><summary>Is this the official Yu Sleep website?</summary><p>No. Everyday Finds is an independent review and affiliate website. The offer links redirect to the seller's website.</p></details>
@@ -171,7 +211,7 @@
   </div></footer>
 
   <script>
-    // Yu Sleep HopLink for ClickBank affiliate account "airandes" - NEW LINK + TID
+    // Yu Sleep HopLink for ClickBank affiliate account "airandes" + tracking TID
     const HOPLINK = "https://e62547tckip2xv7jvdx1nkdkaj.hop.clickbank.net/?tid=everydayfinds";
     document.querySelectorAll("[data-buy]").forEach((button) => {
       button.href = HOPLINK;
