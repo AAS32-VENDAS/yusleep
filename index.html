@@ -26,12 +26,34 @@
     .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{border:1px solid #e9e9f0;border-radius:12px;padding:22px;background:#fff}.feature .symbol{font-size:25px}.feature h3{color:var(--navy);margin:8px 0}
     .shade{background:var(--paper)}.ingredients{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ingredient{background:#fff;border:1px solid #ececf2;border-radius:10px;padding:18px}.ingredient b{color:var(--navy);display:block;margin-bottom:5px}
     .steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border-radius:12px;padding:22px;border:1px solid #e9e9f0}.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green);font-weight:900;margin-bottom:12px}
-    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}.price-card{border:1px solid #e4e4ed;border-radius:14px;padding:24px;text-align:center;position:relative;background:#fff;display:flex;flex-direction:column}.price-card.best{border:2px solid var(--green);box-shadow:0 10px 30px #18203a14}.ribbon{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--green);padding:4px 14px;border-radius:20px;font-size:11px;font-weight:900;white-space:nowrap}.price-card img{height:175px;max-width:100%;object-fit:contain;margin:8px auto 12px}.price-card h3{color:var(--navy);margin:8px 0}.old{color:#9292a0;text-decoration:line-through;font-size:14px}.price{font-size:38px;font-weight:900;color:var(--navy);line-height:1.2}.per{font-size:13px;color:var(--muted)}.price-card ul{padding-left:18px;text-align:left;color:#555;font-size:14px;flex:1}.price-card .btn{margin-top:12px}.disclaimer{font-size:12px;color:#747486;margin-top:20px;text-align:center}
+    /* Package cards styled to echo the seller's offer layout */
+    .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
+    .price-card{border:1px solid #e4e4ed;border-radius:12px;padding:20px 18px;text-align:center;position:relative;background:#fff;display:flex;flex-direction:column;overflow:hidden}
+    .price-card.best{border:2px solid #a7c9e9;box-shadow:0 10px 30px #18203a14;background:#f2f8ff}
+    .offer-kicker{font-size:15px;font-weight:900;letter-spacing:.3px;text-transform:uppercase;color:#555;margin:0 0 8px}
+    .price-card.best .offer-kicker{color:#344e9b}
+    .saving{font-size:13px;font-weight:900;color:#6f9142;text-transform:uppercase;margin-bottom:5px}
+    .price-card img{height:175px;width:100%;max-width:100%;object-fit:contain;margin:6px auto 8px}
+    .price-card h3{color:var(--navy);margin:7px 0 0;font-size:20px}
+    .price-line{display:flex;align-items:baseline;justify-content:center;gap:8px;margin:8px 0 0;white-space:nowrap}
+    .old{color:#777;text-decoration:line-through;font-size:25px;font-weight:800}.price{font-size:37px;font-weight:900;color:#4c3298;line-height:1.1}.each{font-size:13px;color:#555;font-weight:700}
+    .per{font-size:13px;color:var(--muted);margin:0 0 10px}
+    .offer-perks{display:grid;gap:8px;margin:8px 0 12px;min-height:66px}
+    .perk{background:#85b84b;color:#fff;font-size:13px;font-weight:900;letter-spacing:.5px;padding:5px 8px;text-align:left}
+    .perk:before{content:'✓';font-size:19px;font-weight:900;margin-right:8px;color:#d9edff}
+    .perk.empty{visibility:hidden}
+    .price-card .btn{margin-top:auto;background:#f7d84d;color:#18234a;border:1px solid #e5bd26;border-radius:8px;font-size:17px;padding:12px 14px;text-transform:uppercase}
+    .cart-icon{display:inline-grid;place-items:center;background:#263d78;color:white;border-radius:50%;width:30px;height:30px;margin-left:8px;font-size:17px;vertical-align:middle}
+    .payments{display:flex;justify-content:center;align-items:center;gap:5px;flex-wrap:wrap;margin:12px 0 8px}
+    .pay{font-size:10px;font-weight:900;letter-spacing:-.3px;padding:5px 6px;border:1px solid #d8d8df;border-radius:4px;background:#fff;min-width:48px;color:#243d72;line-height:1.1}
+    .pay.mc{color:#b43c30}.pay.visa{color:#174b9b;font-size:12px}.pay.amex{color:#1672a8}.pay.discover{color:#333}
+    .package-total{font-size:13px;color:#666;margin-top:4px}.package-total s{color:#999}
+    .disclaimer{font-size:12px;color:#747486;margin-top:20px;text-align:center}
     .bonus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.bonus{background:#fff;border:1px solid #e8e8ef;padding:22px;border-radius:12px}.bonus h3{color:var(--navy);font-size:18px;margin:0 0 8px}.bonus-tag{color:#5b842a;font-size:12px;font-weight:900;text-transform:uppercase}
     .guarantee{display:grid;grid-template-columns:170px 1fr;gap:28px;align-items:center;background:#f5f6fb;border-radius:16px;padding:30px}.guarantee img{width:100%;max-width:160px}.faq{max-width:850px;margin:auto}.faq details{border-bottom:1px solid #e7e7ed;padding:17px 0}.faq summary{font-weight:800;color:var(--navy);cursor:pointer}.faq p{color:var(--muted);margin-bottom:0}
     .cta-band{background:var(--navy);color:#fff;text-align:center;padding:48px 20px}.cta-band h2{font-size:32px;margin:0 0 10px}.cta-band p{color:#dddced;margin:0 auto 22px;max-width:650px}
     footer{background:#100e29;color:#c8c7d7;padding:30px 0;font-size:12px}footer a{color:#fff}.footer-links{display:flex;gap:18px;flex-wrap:wrap;margin:12px 0}.legal{color:#aaa9bb;max-width:950px}
-    @media(max-width:800px){.hero-grid,.two{grid-template-columns:1fr}.hero{text-align:center}.hero-img{max-width:340px}.feature-grid,.ingredients,.steps,.pricing,.bonus-grid{grid-template-columns:1fr}.nav nav{display:none}.guarantee{grid-template-columns:1fr;text-align:center}.guarantee img{margin:auto;width:130px}section{padding:46px 0}.price-card img{height:155px}}
+    @media(max-width:800px){.hero-grid,.two{grid-template-columns:1fr}.hero{text-align:center}.hero-img{max-width:340px}.feature-grid,.ingredients,.steps,.pricing,.bonus-grid{grid-template-columns:1fr}.nav nav{display:none}.guarantee{grid-template-columns:1fr;text-align:center}.guarantee img{margin:auto;width:130px}section{padding:46px 0}.price-card img{height:165px}.price-card{max-width:520px;width:100%;margin:auto}}
   </style>
 </head>
 <body>
@@ -48,7 +70,6 @@
         <div class="eyebrow">Yu Sleep · Product Overview</div>
         <h1>Yu Sleep Review 2026: Formula, Packages & What to Know</h1>
         <p>Looking into Yu Sleep? This independent overview covers the seller's published formula information, package options and purchase terms so you can review the details before visiting the official website.</p>
-        <p>Start using Yu Sleep tonight for the deep, restorative sleep your body deserves. The seller describes it as a delicious, all-natural nano-enhanced liquid formula designed to support falling asleep faster, staying asleep, and waking up refreshed.</p>
         <a class="btn gold" data-buy href="#">CHECK THE OFFICIAL OFFER</a>
         <p class="hero-note">You will be redirected to the seller's website. Package availability and final checkout totals are determined by the seller.</p>
       </div>
@@ -57,14 +78,13 @@
 
     <section id="about"><div class="wrap two">
       <div><h2 class="section-title" style="text-align:left">What is Yu Sleep?</h2>
-        <p>Yu Sleep is marketed as a liquid dietary supplement designed to support a nighttime relaxation and sleep routine. The seller describes it as a formula featuring 10 highlighted ingredients and a nano-enhanced delivery approach, designed to work with the body's natural rhythm instead of relying on high-dose melatonin or synthetic supplements.</p>
-        <p>The seller says Yu Sleep supports the brain's sleep pressure system — helping you fall asleep naturally, sleep deeper, stay asleep all night, and wake up rested.</p>
+        <p>Yu Sleep is marketed as a liquid dietary supplement designed to support a nighttime relaxation and sleep routine. The seller describes it as a formula featuring seven highlighted ingredients and a nano-enhanced delivery approach.</p>
         <p>This page is an independent product overview, not the manufacturer's website and not medical advice. Individual experiences can vary, and product descriptions should not be understood as a promise of results.</p>
         <a class="btn" data-buy href="#">VISIT THE SELLER'S WEBSITE</a>
       </div>
       <div class="panel"><h3>What to review before ordering</h3><ul class="checklist">
         <li>Read the full ingredient and supplement facts panel.</li>
-        <li>Check the serving directions and warnings - seller suggests 2 droppers 30 minutes before bed.</li>
+        <li>Check the serving directions and warnings.</li>
         <li>Compare the total package price, shipping and taxes at checkout.</li>
         <li>Review the seller's refund policy and customer support details.</li>
       </ul></div>
@@ -73,26 +93,23 @@
     <section class="shade"><div class="wrap">
       <h2 class="section-title">Product Overview</h2><p class="lead">A quick summary of the product details presented by the seller.</p>
       <div class="feature-grid">
-        <div class="feature"><div class="symbol">🌙</div><h3>Nighttime routine</h3><p>Presented as a liquid supplement - 2 droppers taken 30 minutes before bed as part of an evening routine.</p></div>
-        <div class="feature"><div class="symbol">🌿</div><h3>10 highlighted ingredients</h3><p>The seller highlights a blend of plant-derived ingredients, amino acids, minerals and vitamins.</p></div>
+        <div class="feature"><div class="symbol">🌙</div><h3>Nighttime routine</h3><p>Presented as a liquid supplement to take as part of an evening routine.</p></div>
+        <div class="feature"><div class="symbol">🌿</div><h3>Botanical ingredients</h3><p>The seller highlights a blend of plant-derived ingredients alongside other compounds.</p></div>
         <div class="feature"><div class="symbol">🛡️</div><h3>60-day guarantee</h3><p>The seller advertises a 60-day money-back guarantee. Review the official terms before ordering.</p></div>
       </div>
     </div></section>
 
     <section id="ingredients"><div class="wrap">
       <h2 class="section-title">Ingredients Highlighted by the Seller</h2>
-      <p class="lead">The official product page lists the following 10 ingredients. Check the bottle label for exact amounts and the complete supplement facts.</p>
+      <p class="lead">The official product page lists the following seven ingredients. Check the bottle label for exact amounts and the complete supplement facts.</p>
       <div class="ingredients">
-        <div class="ingredient"><b>Red Tart Cherry Extract</b><span>Described by the seller as helping regulate the sleep-wake cycle, reduce nighttime awakenings, and increase total sleep time.</span></div>
-        <div class="ingredient"><b>5-HTP</b><span>A precursor involved in the body's serotonin production, described as supporting mood and relaxation.</span></div>
-        <div class="ingredient"><b>Vitamin B6 & B2</b><span>Described as working together to regulate circadian rhythm and support natural melatonin production and brain health.</span></div>
-        <div class="ingredient"><b>Magnesium Glycinate</b><span>Described as promoting restorative stages of sleep - phases associated with healing, recovery, and memory consolidation.</span></div>
-        <div class="ingredient"><b>Apigenin</b><span>Described by the seller as "nature's gentle sedative", helping reduce time to fall asleep.</span></div>
-        <div class="ingredient"><b>Lemon Balm Extract</b><span>An herb traditionally used in calming preparations. Seller describes it as helping reduce cortisol, the stress hormone.</span></div>
-        <div class="ingredient"><b>L-Theanine</b><span>An amino acid naturally found in tea leaves, described as promoting calm, focused relaxation.</span></div>
-        <div class="ingredient"><b>Melatonin - 0.9mg per serving</b><span>Seller states only 0.9mg per serving to signal the body it's time to rest, reduce time to fall asleep, and support deep sleep.</span></div>
-        <div class="ingredient"><b>GABA</b><span>A compound involved in inhibitory signaling in the nervous system, described as quieting overactive brain activity.</span></div>
-        <div class="ingredient"><b>Passion Flower</b><span>A botanical ingredient included in the seller's earlier formula description. Confirm current label for full list.</span></div>
+        <div class="ingredient"><b>GABA</b><span>A compound involved in inhibitory signaling in the nervous system.</span></div>
+        <div class="ingredient"><b>5-HTP</b><span>A precursor involved in the body's serotonin production.</span></div>
+        <div class="ingredient"><b>Tart Cherry Extract</b><span>A fruit-derived ingredient included in the seller's formula description.</span></div>
+        <div class="ingredient"><b>Vitamin B6</b><span>An essential vitamin involved in normal metabolic functions.</span></div>
+        <div class="ingredient"><b>Lemon Balm</b><span>An herb traditionally used in calming and bedtime preparations.</span></div>
+        <div class="ingredient"><b>L-Theanine</b><span>An amino acid naturally found in tea leaves.</span></div>
+        <div class="ingredient"><b>Passion Flower</b><span>A botanical ingredient included in the seller's highlighted formula.</span></div>
       </div>
       <p class="disclaimer">Ingredient descriptions are educational only and do not establish that the finished product treats insomnia or any medical condition. Consult a qualified healthcare professional before use, especially if you take medication or have a health condition.</p>
     </div></section>
@@ -101,47 +118,65 @@
       <h2 class="section-title">How the Seller Says to Use It</h2><p class="lead">The official product page describes a liquid serving taken before bedtime. Always follow the current bottle label and official instructions.</p>
       <div class="steps">
         <div class="step"><h3>Check the label</h3><p>Read the serving size, directions and warnings before taking the supplement.</p></div>
-        <div class="step"><h3>Follow the directions</h3><p>The seller's page suggests taking 2 droppers 30 minutes before bedtime. Confirm the instructions on the product label.</p></div>
-        <div class="step"><h3>Build a routine</h3><p>The seller suggests consistent use for 3 to 6 months for a full sleep system reset. Keep a consistent sleep schedule and discuss supplement use with a healthcare professional when appropriate.</p></div>
+        <div class="step"><h3>Follow the directions</h3><p>The seller's page suggests taking the product 30–45 minutes before bedtime. Confirm the instructions on the product label.</p></div>
+        <div class="step"><h3>Build a routine</h3><p>Keep a consistent sleep schedule and discuss supplement use with a healthcare professional when appropriate.</p></div>
       </div>
-      <p class="disclaimer">Seller claims most clients report noticeably deeper sleep, fewer nighttime wakeups, and waking up refreshed, often within the first few nights. Individual results may vary.</p>
     </div></section>
 
     <section id="packages"><div class="wrap">
       <h2 class="section-title">Compare Yu Sleep Packages</h2>
-      <p class="lead">The following prices are displayed on the seller's website at the time this page was prepared. Confirm the live price, shipping and taxes on the checkout page. The seller states Yu Sleep is only offered in minimum 2-month packages.</p>
+      <p class="lead">Compare the package options shown in the seller's offer. Prices, shipping and bonus availability may change; confirm the final total on the seller's checkout page.</p>
       <div class="pricing">
+        <!-- 2-bottle package: 30% off, $69 each, $138 total -->
         <article class="price-card">
-          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828b96f6e48ec3d3c31143e.webp" alt="Two month supply of Yu Sleep">
-          <h3>2 Month Supply</h3><div class="old">$198</div><div class="price">$138</div><div class="per">$69 per bottle · 30% OFF - SAVE $60</div>
-          <ul><li>2 bottles</li><li>60-day guarantee advertised</li><li>Shipping may be added at checkout</li></ul>
-          <a class="btn" data-buy href="#">CHECK OFFER</a>
+          <div class="offer-kicker">30% OFF · SAVE $60</div>
+          <img src="yu-sleep-2-bottles.jpg" alt="Two bottles of Yu Sleep">
+          <h3>2 Month Supply</h3>
+          <div class="price-line"><span class="old">$99</span><span class="price">$69</span><span class="each">/each</span></div>
+          <div class="per">$138 total · 2 bottles</div>
+          <div class="offer-perks"><div class="perk empty">Free shipping</div><div class="perk empty">Free bonuses</div></div>
+          <a class="btn" data-buy href="#">ADD TO CART <span class="cart-icon">🛒</span></a>
+          <div class="payments"><span class="pay mc">Mastercard</span><span class="pay visa">VISA</span><span class="pay amex">AMERICAN<br>EXPRESS</span><span class="pay discover">DISCOVER</span></div>
+          <div class="package-total">Total: <s>$198</s> $138</div>
         </article>
-        <article class="price-card">
-          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828ba756e48ec25bd311679.png" alt="Three month supply of Yu Sleep">
-          <h3>3 Month Supply</h3><div class="old">$297</div><div class="price">$177</div><div class="per">$59 per bottle · 40% OFF - SAVE $120</div>
-          <ul><li>3 bottles</li><li>Seller advertises bonus gifts</li><li>60-day guarantee advertised</li><li>Confirm shipping terms at checkout</li></ul>
-          <a class="btn" data-buy href="#">CHECK OFFER</a>
-        </article>
+
+        <!-- 6-bottle package: 50% off, $49 each, $294 total -->
         <article class="price-card best">
-          <div class="ribbon">POPULAR PACKAGE - SAVE $300</div>
-          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6827b16680f93e05caaed4ae.png" alt="Six month supply of Yu Sleep">
-          <h3>6 Month Supply</h3><div class="old">$594</div><div class="price">$294</div><div class="per">$49 per bottle · 50% OFF - SAVE $300 · Only $1.60 per night</div>
-          <ul><li>6 bottles</li><li>Seller advertises bonus gifts</li><li>60-day guarantee advertised</li><li>Seller advertises free shipping</li></ul>
-          <a class="btn" data-buy href="#">CHECK OFFER</a>
+          <div class="offer-kicker">50% OFF · SAVE $300</div>
+          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6827b16680f93e05caaed4ae.png" alt="Six Yu Sleep amber dropper bottles with purple labels">
+          <h3>6 Month Supply</h3>
+          <div class="price-line"><span class="old">$99</span><span class="price">$49</span><span class="each">/each</span></div>
+          <div class="per">$294 total · 6 bottles</div>
+          <div class="offer-perks"><div class="perk">FREE SHIPPING</div><div class="perk">FREE BONUSES</div></div>
+          <a class="btn" data-buy href="#">ADD TO CART <span class="cart-icon">🛒</span></a>
+          <div class="payments"><span class="pay mc">Mastercard</span><span class="pay visa">VISA</span><span class="pay amex">AMERICAN<br>EXPRESS</span><span class="pay discover">DISCOVER</span></div>
+          <div class="package-total">Total: <s>$594</s> $294</div>
+        </article>
+
+        <!-- 3-bottle package: 40% off, $59 each, $177 total -->
+        <article class="price-card">
+          <div class="offer-kicker">40% OFF · SAVE $120</div>
+          <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828ba756e48ec25bd311679.png" alt="Three Yu Sleep amber dropper bottles with purple labels">
+          <h3>3 Month Supply</h3>
+          <div class="price-line"><span class="old">$99</span><span class="price">$59</span><span class="each">/each</span></div>
+          <div class="per">$177 total · 3 bottles</div>
+          <div class="offer-perks"><div class="perk">FREE SHIPPING</div><div class="perk">FREE BONUSES</div></div>
+          <a class="btn" data-buy href="#">ADD TO CART <span class="cart-icon">🛒</span></a>
+          <div class="payments"><span class="pay mc">Mastercard</span><span class="pay visa">VISA</span><span class="pay amex">AMERICAN<br>EXPRESS</span><span class="pay discover">DISCOVER</span></div>
+          <div class="package-total">Total: <s>$297</s> $177</div>
         </article>
       </div>
-      <p class="disclaimer">Prices and package details can change without notice. The checkout page is the final source for current price, available packages, shipping, taxes and payment methods.</p>
+      <p class="disclaimer">Prices and package details can change without notice. The checkout page is the final source for current price, available packages, shipping, taxes and payment methods. Payment logos are shown as visual references; accepted methods are determined by the seller's checkout.</p>
     </div></section>
 
     <section class="shade"><div class="wrap">
       <h2 class="section-title">Bonus Guides Advertised with Select Packages</h2>
-      <p class="lead">The seller's offer page displays bonus gifts with the 3-month and 6-month packages. The exact bonus availability should be confirmed on the live offer page.</p>
+      <p class="lead">The seller's offer page displays bonus gifts with the 3-bottle and 6-bottle packages. The exact bonus availability should be confirmed on the live offer page.</p>
       <div style="text-align:center;margin:0 auto 24px"><img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828ba2839dd98a4899a0590.png" alt="Free bonuses banner" style="max-width:100%;height:auto"></div>
       <div class="bonus-grid">
-        <div class="bonus"><div class="bonus-tag">Digital bonus #1</div><h3>The Wind Down Routine</h3><p>11 soothing bedtime stories in eBook and audio format, designed to quiet racing thoughts and guide you into deep sleep. Seller values at $97.</p></div>
-        <div class="bonus"><div class="bonus-tag">Digital bonus #2</div><h3>Younger & Happier While You Sleep</h3><p>An anti-aging eBook with science-based nightly rituals to reprogram subconscious mind, release stress, and wake up feeling younger and more confident.</p></div>
-        <div class="bonus"><div class="bonus-tag">Digital bonus #3</div><h3>Popular Bedtime Snacks That Trigger 3 AM Wakeups</h3><p>A guide on bedtime snacks that may disturb sleep, plus Dr. Collins' nighttime food blueprint for steady blood sugar and deep rest.</p></div>
+        <div class="bonus"><div class="bonus-tag">Digital bonus</div><h3>The Wind Down Routine</h3><p>Bedtime story content intended to accompany a relaxing evening routine.</p></div>
+        <div class="bonus"><div class="bonus-tag">Digital bonus</div><h3>Younger & Happier While You Sleep</h3><p>A guide focused on simple nighttime habits and personal wellness routines.</p></div>
+        <div class="bonus"><div class="bonus-tag">Digital bonus</div><h3>Bedtime Snacks Guide</h3><p>A guide discussing evening snack choices and nighttime habits.</p></div>
       </div>
       <p class="disclaimer">Bonus titles and availability are subject to the seller's current promotion. This page does not provide or host the bonus downloads.</p>
     </div></section>
@@ -149,20 +184,17 @@
     <section><div class="wrap guarantee">
       <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828bc3c39dd9885459a092d.webp" alt="60-day money-back guarantee seal">
       <div><h2 style="color:var(--navy);margin-top:0">60-Day Money-Back Guarantee</h2>
-        <p>The seller advertises a 60-day money-back guarantee. If you are not satisfied, email support@yu-sleep.com and follow the steps on the seller's Refund Policy page. Before purchasing, read the official refund policy for eligibility, deadlines, return instructions and any applicable conditions.</p>
+        <p>The seller advertises a 60-day money-back guarantee. Before purchasing, read the official refund policy for eligibility, deadlines, return instructions and any applicable conditions.</p>
         <a class="btn dark" data-buy href="#">REVIEW THE OFFICIAL OFFER</a>
       </div>
     </div></section>
 
     <section id="faq" class="shade"><div class="wrap faq">
       <h2 class="section-title">Frequently Asked Questions</h2>
-      <details><summary>How exactly does Yu Sleep work?</summary><p>According to the seller, it resets the sleep pressure system by supporting adenosine buildup, optimizing natural melatonin release, and calming the nervous system so you can fall asleep easier and stay asleep longer.</p></details>
-      <details><summary>How fast will I see results?</summary><p>The seller says most people start sleeping better within 3-7 days, with falling asleep easier in nights 1-3, sleeping through the night in week 1, and waking up refreshed in week 1-2. Full system reset is described as 3 to 6 months.</p></details>
       <details><summary>Where can I check the current price?</summary><p>Use one of the offer links on this page to visit the seller's website. The final amount, shipping and taxes are shown during checkout.</p></details>
       <details><summary>Which payment methods are accepted?</summary><p>Payment options can vary. Review the payment methods displayed on the secure checkout page before submitting an order.</p></details>
-      <details><summary>Is shipping included?</summary><p>The seller advertises free shipping on the 6-month package. For other packages, shipping may be added. Check the checkout total for the exact shipping cost.</p></details>
-      <details><summary>Are the bonus guides included with every package?</summary><p>The seller displays bonus gifts with the 3-month and 6-month offers. Confirm the current bonus terms on the seller's page before ordering.</p></details>
-      <details><summary>How fast will I get it?</summary><p>Seller states orders ship within 24 hours in discreet packaging. Delivery in 5-7 business days in the US and 15-21 business days outside the US.</p></details>
+      <details><summary>Is shipping included?</summary><p>The seller's published page indicates that shipping may be added to the two-bottle package. The 3-bottle and 6-bottle offers display free shipping. Confirm the checkout total for the exact shipping cost.</p></details>
+      <details><summary>Are the bonus guides included with every package?</summary><p>The seller displays bonus gifts with the 3-bottle and 6-bottle offers. Confirm the current bonus terms on the seller's page before ordering.</p></details>
       <details><summary>Does Yu Sleep treat insomnia?</summary><p>This is a dietary supplement, not a substitute for medical care. The information on this page does not establish that Yu Sleep diagnoses, treats, cures or prevents any disease. Speak with a healthcare professional about persistent sleep problems.</p></details>
       <details><summary>Is this the official Yu Sleep website?</summary><p>No. Everyday Finds is an independent review and affiliate website. The offer links redirect to the seller's website.</p></details>
     </div></section>
@@ -179,7 +211,7 @@
   </div></footer>
 
   <script>
-    // Yu Sleep HopLink for ClickBank affiliate account "airandes" - NEW LINK + TID
+    // Yu Sleep HopLink for ClickBank affiliate account "airandes" + tracking TID
     const HOPLINK = "https://e62547tckip2xv7jvdx1nkdkaj.hop.clickbank.net/?tid=everydayfinds";
     document.querySelectorAll("[data-buy]").forEach((button) => {
       button.href = HOPLINK;
