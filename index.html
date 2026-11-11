@@ -26,7 +26,6 @@
     .feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{border:1px solid #e9e9f0;border-radius:12px;padding:22px;background:#fff}.feature .symbol{font-size:25px}.feature h3{color:var(--navy);margin:8px 0}
     .shade{background:var(--paper)}.ingredients{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ingredient{background:#fff;border:1px solid #ececf2;border-radius:10px;padding:18px}.ingredient b{color:var(--navy);display:block;margin-bottom:5px}
     .steps{counter-reset:step;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:#fff;border-radius:12px;padding:22px;border:1px solid #e9e9f0}.step:before{counter-increment:step;content:counter(step);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--green);font-weight:900;margin-bottom:12px}
-    /* Package cards styled to echo the seller's offer layout */
     .pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:stretch}
     .price-card{border:1px solid #e4e4ed;border-radius:12px;padding:20px 18px;text-align:center;position:relative;background:#fff;display:flex;flex-direction:column;overflow:hidden}
     .price-card.best{border:2px solid #a7c9e9;box-shadow:0 10px 30px #18203a14;background:#f2f8ff}
@@ -127,10 +126,9 @@
       <h2 class="section-title">Compare Yu Sleep Packages</h2>
       <p class="lead">Compare the package options shown in the seller's offer. Prices, shipping and bonus availability may change; confirm the final total on the seller's checkout page.</p>
       <div class="pricing">
-        <!-- 2-bottle package: 30% off, $69 each, $138 total -->
         <article class="price-card">
           <div class="offer-kicker">30% OFF · SAVE $60</div>
-          <img src="yu-sleep-2-bottles.jpg" alt="Dois frascos conta-gotas Yu Sleep âmbar com rótulos roxos">
+          <img src="https://yusileep.com/images/Yu_Sleep_2_bottles.webp" alt="Official Yu Sleep two-bottle package" loading="lazy">
           <h3>2 Month Supply</h3>
           <div class="price-line"><span class="old">$99</span><span class="price">$69</span><span class="each">/each</span></div>
           <div class="per">$138 total · 2 bottles</div>
@@ -140,7 +138,6 @@
           <div class="package-total">Total: <s>$198</s> $138</div>
         </article>
 
-        <!-- 6-bottle package: 50% off, $49 each, $294 total -->
         <article class="price-card best">
           <div class="offer-kicker">50% OFF · SAVE $300</div>
           <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6827b16680f93e05caaed4ae.png" alt="Six Yu Sleep amber dropper bottles with purple labels">
@@ -153,7 +150,6 @@
           <div class="package-total">Total: <s>$594</s> $294</div>
         </article>
 
-        <!-- 3-bottle package: 40% off, $59 each, $177 total -->
         <article class="price-card">
           <div class="offer-kicker">40% OFF · SAVE $120</div>
           <img src="https://assets.cdn.filesafe.space/qcj1aq8wBOGSWzpzy6kH/media/6828ba756e48ec25bd311679.png" alt="Three Yu Sleep amber dropper bottles with purple labels">
